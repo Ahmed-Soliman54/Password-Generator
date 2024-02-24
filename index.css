@@ -1,0 +1,115 @@
+
+*{
+box-sizing: border-box;
+font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #002339;
+}
+.container {
+    width: 700px;
+    margin: auto;
+}
+.content {
+    width: 100%;
+    margin-top: 30%;
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+h3:nth-child(1){
+    margin: 0;
+    color: white;
+
+}
+h3:nth-child(2){
+    color: #019f55;
+    margin-bottom: 20px;
+    width: fit-content;
+
+
+}
+h3:nth-child(2)::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #019f55;
+    margin-top: 20px;
+}
+.inputs{
+    text-align: start;
+    background-color: #fff;
+    border-radius: 10px;
+  
+
+}
+input {
+    outline: none;
+    font-size: 24px;
+    border: none;
+    color:#019f55;
+    pointer-events: none;
+    font-weight: bold;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    
+    
+
+}
+.text i {
+    font-size: 30px;
+    color: #019f55;
+    cursor: pointer;
+}
+
+
+button{
+    padding: 20px 40px ;
+    background-color: #019f55;
+    border: none;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: fit-content;
+}
+.btn i {
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.text i::after{
+    content: "Copied !";
+    position: absolute;
+    font-size: 8px;
+    background-color: #019f55;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    right: 80px;
+    top: 38px;
+    pointer-events: none;
+    display: none;
+    letter-spacing: 1px;
+}
+.active{
+    display: block;
+}
+.text i.active::after {
+    display: block;
+}
